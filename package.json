@@ -1,0 +1,26 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Affiiiffff/note-taker.git"
+  },
+  "author": "Afif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Affiiiffff/note-taker/issues"
+  },
+  "homepage": "https://github.com/Affiiiffff/note-taker#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
