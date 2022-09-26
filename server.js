@@ -5,18 +5,18 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const apiRoutes = require("./routes/apiRoutes");
 
-app.use(express.static(path.join(__dirname, "./develop/public")));
+app.use(express.static(path.join(__dirname, "./Develop/public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/api", apiRoutes);
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./develop/public/index.html"));
+  res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
 });
 
 app.get("/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "./develop/public/notes.html"));
+  res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
 });
 
 app.listen(PORT, function () {
