@@ -1,5 +1,5 @@
 Link to deplyed heroku
-[https://git.heroku.com/fast-citadel-61993.git]
+[https://fast-citadel-61993.herokuapp.com/]
 
 Table of Contents
 Description
