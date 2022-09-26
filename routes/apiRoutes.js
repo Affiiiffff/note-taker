@@ -4,7 +4,7 @@ const { v4: uuidv4 } = require("uuid");
 const router = Router();
 
 router.get("/notes", function (req, res) {
-  fs.readFile("./develop/db/db.json", "utf8", function (err, data) {
+  fs.readFile("./Develop/db/db.json", "utf8", function (err, data) {
     if (err) throw err;
 
     res.json(JSON.parse(data));
@@ -15,7 +15,7 @@ router.get("/notes", function (req, res) {
 router.delete("/notes/:id", function (req, res) {
   let id = req.params.id;
 
-  fs.readFile("./develop/db/db.json", "utf8", function (err, data) {
+  fs.readFile("./Develop/db/db.json", "utf8", function (err, data) {
     if (err) throw err;
 
     let JSONraw = JSON.parse(data);
@@ -25,7 +25,7 @@ router.delete("/notes/:id", function (req, res) {
         JSONraw.splice(i, 1);
 
         fs.writeFile(
-          "./develop/db/db.json",
+          "./Develop/db/db.json",
           JSON.stringify(JSONraw),
           function (err) {
             if (err) throw err;
@@ -41,7 +41,7 @@ router.delete("/notes/:id", function (req, res) {
 });
 
 router.post("/notes", function (req, res) {
-  fs.readFile("./develop/db/db.json", "utf8", function (err, data) {
+  fs.readFile("./Develop/db/db.json", "utf8", function (err, data) {
     if (err) throw err;
 
     let JSONJSONraw = JSON.parse(data);
@@ -49,7 +49,7 @@ router.post("/notes", function (req, res) {
     JSONJSONraw.push({ ...req.body, id: uuidv4() });
 
     fs.writeFile(
-      "./develop/db/db.json",
+      "./Develop/db/db.json",
       JSON.stringify(JSONJSONraw),
       function (err) {
         if (err) return err;

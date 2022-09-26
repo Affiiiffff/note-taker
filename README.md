@@ -1,12 +1,12 @@
 Link to deplyed heroku
-[https://drive.google.com/file/d/1t9UtZW3bsicdik20fDw6LwpffIR5G0YG/view]
+[https://fast-citadel-61993.herokuapp.com/]
 
 Table of Contents
 Description
 Usage
 License
 Contributing
-Questions
+Questionsgit
 Project title :
 Note-taker
 
